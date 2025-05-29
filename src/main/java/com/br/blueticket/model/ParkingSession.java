@@ -2,10 +2,17 @@ package com.br.blueticket.model;
 
 import java.time.LocalDateTime;
 
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotNull;
 
 public class ParkingSession {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	
 	@NotNull
 	private User user;
 	
