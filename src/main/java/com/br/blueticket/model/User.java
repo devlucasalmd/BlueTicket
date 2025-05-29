@@ -46,8 +46,7 @@ public class User {
 	@Size(min = 8, max = 15)
 	private String password;
 	
-	@NotNull
-	private String city;
+	
 	
 	
 }
